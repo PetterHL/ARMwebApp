@@ -64,14 +64,14 @@
         },
         "repoURL": {
             "type": "string",
-            "defaultValue": "https://github.com/PetterHL/CoffeeShopTemplate",
+            "defaultValue": "https://github.com/PetterHL/CoffeeShopTemplate.git",
             "metadata": {
                 "description": "The URL for the GitHub repository that contains the project to deploy."
             }
         },
         "branch": {
             "type": "string",
-            "defaultValue": "master",
+            "defaultValue": "main",
             "metadata": {
                 "description": "The branch of the GitHub repository to use."
             }
@@ -151,7 +151,7 @@
                 {
                     "type": "sourcecontrols",
                     "apiVersion": "2020-12-01",
-                    "name": "web",
+                    "name": "web2",
                     "location": "[parameters('location2')]",
                     "dependsOn": [
                         "[resourceId('Microsoft.Web/sites', parameters('siteName2'))]"
